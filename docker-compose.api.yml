@@ -14,6 +14,4 @@ services:
         IS_DEVELOPMENT: true
         LOG_LEVEL: INFO
         DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgresql:5432/python_clean_arch
-        ACCESS_TOKEN_EXPIRE_MINUTES: 30
-        REFRESH_TOKEN_EXPIRE_DAYS: 7
         SHOULD_RESET_DATABASE: true
