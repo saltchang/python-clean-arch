@@ -1,7 +1,7 @@
 [project]
 name = "python-clean-architecture"
 version = "0.1.0"
-description = "This is project aims to provide a clean architecture for Python applications as a template."
+description = "This project aims to provide a template for clean architecture in Python applications."
 authors = [{ name = "Salt Chang", email = "saltchang@outlook.com" }]
 readme = "README.md"
 requires-python = ">=3.13, <4.0"
