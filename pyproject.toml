@@ -1,0 +1,52 @@
+[project]
+name = "python-clean-architecture"
+version = "0.1.0"
+description = "This is project aims to provide a clean architecture for Python applications as a template."
+authors = [{ name = "Salt Chang", email = "saltchang@outlook.com" }]
+readme = "README.md"
+requires-python = ">=3.13, <4.0"
+
+[tool.poetry.dependencies]
+asyncpg = "^0.30.0"
+fastapi = "^0.115.11"
+greenlet = "^3.1.1"
+pydantic-settings = "^2.8.1"
+sqlalchemy = "^2.0.39"
+uvicorn = "^0.34.0"
+httpx = "^0.28.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.1"
+colorlog = "^6.9.0"
+pyright = "^1.1.397"
+pytest = "^8.3.5"
+pytest-asyncio = "^0.25.3"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.isort]
+multi_line_output = 3
+combine_as_imports = true
+include_trailing_comma = false
+
+force_grid_wrap = 2
+line_length = 120
+profile = "black"
+src_paths = ["app", "tests"]
+
+[tool.pyright]
+include = ["app", "tests"]
+extraPaths = ["app"]
+exclude = ["**/node_modules", "**/__pycache__"]
+stubPath = "type-stub"
+reportMissingImports = "error"
+reportMissingTypeStubs = false
+typeCheckingMode = "standard"
+pythonVersion = "3.13"

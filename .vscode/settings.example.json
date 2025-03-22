@@ -1,0 +1,29 @@
+{
+  "cSpell.words": [
+    "datname",
+    "levelname",
+    "ondelete",
+    "onupdate",
+    "PKCS",
+    "poolclass",
+    "SECP",
+    "selectin"
+  ],
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "plpgsqlLanguageServer.enableExecuteFileQueryCommand": false,
+  "plpgsqlLanguageServer.workspaceValidationTargetFiles": [],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.languageServer": "Pylance",
+  "ruff.enable": true,
+  "ruff.organizeImports": true,
+  "ruff.fixAll": true
+}
